@@ -4,7 +4,8 @@ on:
   schedule:
     # 使用cron表达式定义任务运行的时间
     # github使用utc时间
-    - cron: '0 */2 * * *'  # 每2小时的第0分钟
+    #- cron: '0 */2 * * *'  # 每2小时的第0分钟
+    - cron: 0 0 */20 * *  # 每20天的00:00执行 [[7]]
   workflow_dispatch:
 
 jobs:
